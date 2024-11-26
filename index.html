@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Responsivo</title>
+    <meta name="author" content="Bruna Domingos Hoffmann">
+    <title>PORTFÓLIO - Bruna</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,16 +12,16 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="#home" class="brand">Navbar</a>
                 <button class="toggle-menu" aria-label="Toggle navigation">
                     ☰
                 </button>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#formulario">Contato</a></li>
                 </ul>
+                <button class="theme-toggle" aria-label="Alternar Tema">Modo Claro</button>
             </div>
         </nav>
     </header>
@@ -35,10 +36,45 @@
         </div>
     </div>
 
-    <div class="bio">
-        <h2>BIOGRAFIA</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id enim nec leo facilisis feugiat.</p>
-    </div>
+    <div id="habilidades"> 
+        <h2>Habilidades</h2>
+    
+        <div class="card" data-title="Angular" data-text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer." data-image="./img/angular.jpg">
+            <div class="card-row">
+                <div class="card-image">
+                    <img src="./img/angular.jpg" alt="Angular">
+                </div>
+                <div class="card-content">
+                    <h5 class="card-title">Angular</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card" data-title="Spring Boot" data-text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer." data-image="./img/spring.png">
+            <div class="card-row">
+                <div class="card-image">
+                    <img src="./img/spring.png" alt="Spring Boot">
+                </div>
+                <div class="card-content">
+                    <h5 class="card-title">Spring Boot</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card" data-title="PostgreSQL/MySQL" data-text="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer." data-image="./img/postmy.png">
+            <div class="card-row">
+                <div class="card-image">
+                    <img src="./img/postmy.png" alt="PostgreSQL/MySQL">
+                </div>
+                <div class="card-content">
+                    <h5 class="card-title">PostgreSQL/MySQL</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
 
     <div class="carousel" id="projetos">
         <div class="carousel-inner">
@@ -72,5 +108,14 @@
     <footer class="footer">
         <p>Copyright ©2024 - VulpixDev</p>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" class="modal-image">
+            <h2 class="modal-title"></h2>
+            <p class="modal-text"></p>
+        </div>
+    </div>
 </body>
 </html>
