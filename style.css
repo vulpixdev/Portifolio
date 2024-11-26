@@ -425,6 +425,10 @@ body.light-mode .modal-text{
     color: #000;
 }
 
+body.light-mode .modal-title{
+    color: #000;
+}
+
 body.light-mode .content{
     color: #f5f2f2;
 }
