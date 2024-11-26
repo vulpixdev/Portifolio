@@ -62,10 +62,18 @@ body {
 }
 
 .home {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;    /* Alinha verticalmente */
+    height: 100vh;          /* Garante que a altura ocupe toda a viewport */
+    text-align: center;     /* Centraliza o texto dentro da seção */
+    background: radial-gradient(ellipse at bottom, var(--carousel-blue) 0%, var(--modal-title-color) 100%);
+}
+/* .home {
     height: 90vh;
     overflow: hidden;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  }
+  } */
   
   #stars {
     width: 1px;
