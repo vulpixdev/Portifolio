@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="brand">Navbar</a>
+                <button class="toggle-menu" aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formulario">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home" id="home">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="content">
+            <h1>Bem-vindo ao Meu Site</h1>
+            <p>Descubra projetos incríveis e entre em contato!</p>
+        </div>
+    </div>
+
+    <div class="bio">
+        <h2>BIOGRAFIA</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id enim nec leo facilisis feugiat.</p>
+    </div>
+
+    <div class="carousel" id="projetos">
+        <div class="carousel-inner">
+            <img src="./img/tabelaperiodica.png" alt="Tabela Periódica" class="active">
+            <img src="./img/displayflex.png" alt="Display Flex">
+            <img src="./img/displaygrid.png" alt="Display Grid">
+        </div>
+        <button class="carousel-control prev" aria-label="Previous">←</button>
+        <button class="carousel-control next" aria-label="Next">→</button>
+    </div>
+
+    <div class="formulario" id="formulario">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label>
+                Nome:
+                <input type="text" name="nome" required>
+            </label>
+            <label>
+                E-mail:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Mensagem:
+                <textarea name="mensagem" rows="4" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright ©2024 - VulpixDev</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
